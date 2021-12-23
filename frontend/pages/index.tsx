@@ -17,7 +17,7 @@ const Home: NextPage = () => {
       <main>
         <Navigation />
         <h1 className={styles.title}>
-          Welcome to <a href="https://contrarycap.com/waterloo">Contrary Capital Waterloo Pod!</a>
+          Welcome to <a href="https://contrarycap.com/waterloo" rel="noreferrer" target={'_blank'}>Contrary Capital Waterloo Pod!</a>
         </h1>
         <article>
           <div id='about'>
