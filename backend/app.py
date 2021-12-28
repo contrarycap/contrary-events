@@ -8,7 +8,7 @@ from gcsa.google_calendar import GoogleCalendar
 from gcsa.event import Event
 
 app = Flask(__name__)
-calendar = GoogleCalendar(calendar='c_63r96q0f9clmrcb2tentcc6u3k@group.calendar.google.com')
+calendar = GoogleCalendar(calendar='')
 
 
 @app.route('/add-event', methods=['POST'])
