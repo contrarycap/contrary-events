@@ -10,14 +10,14 @@ const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Contrary Capital Waterloo Pod Events</title>
-        <meta name="description" content="Contrary Capital Waterloo Pod Events" />
+        <title>Waterloo Events</title>
+        <meta name="description" content="Contrary Capital - Waterloo Events" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
         <Navigation />
         <h1 className={styles.title}>
-          Welcome to <a href="https://contrarycap.com/waterloo" rel="noreferrer" target={'_blank'}>Contrary Capital Waterloo Pod!</a>
+          Welcome to <a href="https://contrarycap.com/waterloo" rel="noreferrer" target={'_blank'}>Waterloo!</a>
         </h1>
         <article>
           <div id='about'>
