@@ -1,6 +1,10 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
-import MuiNextLink from '@components/MuiNextLink';
+import MuiNextLink from '@components/core-components/MuiNextLink';
+import About from '@components/about';
+import FAQ from '@components/faq';
+import Events from '@components/events';
+import { Stack } from '@mui/material';
 
 export default function Home() {
   return (
@@ -12,13 +16,17 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <MuiNextLink href="" target="_blank">Waterloo</MuiNextLink>!
-        </h1>
-
-        <p className={styles.description}>
-          {`Contrary Capital's Waterloo Event Hub`}
-        </p>
+        <Stack spacing={2} width={'100%'}>
+          <h1 className={styles.title}>
+            Welcome to <MuiNextLink href="" target="_blank">Waterloo</MuiNextLink>!
+          </h1>
+          <p className={styles.description}>
+            {`Contrary Capital's Waterloo Event Hub`}
+          </p>
+          <Events />
+          <About />
+          <FAQ />
+        </Stack>
       </main>
     </div>
   )
