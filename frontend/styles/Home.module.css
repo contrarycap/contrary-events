@@ -29,7 +29,6 @@
 }
 
 .title a {
-  color: #0070f3;
   text-decoration: none;
 }
 
@@ -50,17 +49,10 @@
   text-align: center;
 }
 
-.article {
-  max-width: 48rem;
-  width: 100%;
-  margin: auto;
-}
-
 .description {
-  margin: 1rem 0;
+  margin: 4rem 0;
   line-height: 1.5;
   font-size: 1.5rem;
-  text-align: left;
 }
 
 .code {
@@ -95,8 +87,8 @@
 .card:hover,
 .card:focus,
 .card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+  color: #88b1b1;
+  border-color: #88b1b1;
 }
 
 .card h2 {
