@@ -1,8 +1,7 @@
 import Box from "@mui/material/Box";
-import Image from "next/image";
 import styles from '@styles/Home.module.css';
 import Typography from '@mui/material/Typography';
-import MuiNextLink from '@components/MuiNextLink';
+import MuiNextLink from '@components/core-components/MuiNextLink';
 import { Language, Twitter } from "@mui/icons-material";
 import { Stack } from "@mui/material";
 
@@ -15,6 +14,7 @@ const Footer = () => {
         alignItems="center"
         spacing={4}
       >
+        <Typography variant="subtitle1">Made with 💙 by Contrary Waterloo Pod</Typography>
         <MuiNextLink
           sx={{ textDecoration: "none" }}
           href="https://contrarycap.com/waterloo"
