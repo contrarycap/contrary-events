@@ -1,12 +1,47 @@
-import { createTheme, responsiveFontSizes } from "@mui/material/styles";
+import { createTheme } from "@mui/material";
 
-// Create a theme instance.
-let theme = createTheme({
+const theme = createTheme({
   palette: {
-
+    primary: {
+      main: "#3065FE",
+      light: "#e4ecf7",
+      dark: "#0d0e29"
+    },
+    background: {
+      default: "#000"
+    },
+    text: {
+      primary: "#ffffff",
+      secondary: "#ffffff"
+    }
+  },
+  typography: {
+    fontFamily: "Work Sans",
+    h1: {
+      fontSize: 68,
+      fontWeight: 700,
+      lineHeight: 1.2
+    },
+    h3: {
+      fontWeight: 600,
+      fontSize: 36
+    },
+    h2: {
+      fontWeight: 600,
+      fontSize: 48
+    },
+    body1: {
+      fontSize: 18,
+      lineHeight: 1.8
+    },
+    button: {
+      fontSize: 15,
+      lineHeight: 1
+    }
+  },
+  shape: {
+    borderRadius: 0
   }
 });
-
-theme = responsiveFontSizes(theme);
 
 export default theme;
