@@ -26,8 +26,8 @@ export default function Home() {
           </p>
           <Events />
           <Links />
-          <About />
           <FAQ />
+          <About />
         </Stack>
       </main>
     </div>
