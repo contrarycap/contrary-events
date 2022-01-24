@@ -17,24 +17,37 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+
         <Stack spacing={4} width={'100%'}>
-          <h1 className={styles.title}>
-            Waterloo Events Calendar
-          </h1>
-          <Typography variant="h6" textAlign="center">
-            Created by <MuiNextLink
-              href="http://contrarycap.com/"
-              target="_blank"
-              sx={{ textDecoration: 'none' }}>
-              Contrary Capital
-            </MuiNextLink>!
-          </Typography>
-          <Events />
-          <Links />
-          <FAQ />
-          <About />
+          <div data-aos="fade-up" data-aos-duration="1000">
+            <h1 className={styles.title}>
+              Waterloo Events Calendar
+            </h1>
+          </div>
+          <div data-aos="fade-up" data-aos-duration="1000">
+            <Typography variant="h6" textAlign="center">
+              Created by <MuiNextLink
+                href="http://contrarycap.com/"
+                target="_blank"
+                sx={{ textDecoration: 'none' }}>
+                Contrary Capital
+              </MuiNextLink>!
+            </Typography>
+          </div>
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+            <Events />
+          </div>
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
+            <Links />
+          </div>
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1500">
+            <FAQ />
+          </div>
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="2000">
+            <About />
+          </div>
         </Stack>
       </main>
-    </div>
+    </div >
   )
 }
