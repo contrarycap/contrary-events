@@ -4,6 +4,7 @@ import MuiNextLink from '@components/core-components/MuiNextLink';
 import About from '@components/about';
 import FAQ from '@components/faq';
 import Events from '@components/events';
+import Links from '@components/links';
 import { Stack } from '@mui/material';
 
 export default function Home() {
@@ -16,7 +17,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <Stack spacing={2} width={'100%'}>
+        <Stack spacing={4} width={'100%'}>
           <h1 className={styles.title}>
             Welcome to <MuiNextLink href="" target="_blank">Waterloo</MuiNextLink>!
           </h1>
@@ -24,6 +25,7 @@ export default function Home() {
             {`Contrary Capital's Waterloo Event Hub`}
           </p>
           <Events />
+          <Links />
           <About />
           <FAQ />
         </Stack>
