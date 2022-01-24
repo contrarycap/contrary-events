@@ -5,13 +5,13 @@ import About from '@components/about';
 import FAQ from '@components/faq';
 import Events from '@components/events';
 import Links from '@components/links';
-import { Stack } from '@mui/material';
+import { Stack, Typography } from '@mui/material';
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Contrary Waterloo Events Hub</title>
+        <title>Waterloo Events Calendar - Contrary Capital</title>
         <meta name="description" content="Find tech, entrepreneruial, startup events in your community." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -19,11 +19,16 @@ export default function Home() {
       <main className={styles.main}>
         <Stack spacing={4} width={'100%'}>
           <h1 className={styles.title}>
-            Welcome to <MuiNextLink href="" target="_blank">Waterloo</MuiNextLink>!
+            Waterloo Events Calendar
           </h1>
-          <p className={styles.description}>
-            {`Contrary Capital's Waterloo Event Hub`}
-          </p>
+          <Typography variant="h6" textAlign="center">
+            Created by <MuiNextLink
+              href="http://contrarycap.com/"
+              target="_blank"
+              sx={{ textDecoration: 'none' }}>
+              Contrary Capital
+            </MuiNextLink>!
+          </Typography>
           <Events />
           <Links />
           <FAQ />
