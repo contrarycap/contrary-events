@@ -37,13 +37,13 @@ export default function Home() {
           <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
             <Events />
           </div>
-          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
+          <div data-aos="fade-up" data-aos-duration="1000">
             <Links />
           </div>
-          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1500">
+          <div data-aos="fade-up" data-aos-duration="1000">
             <FAQ />
           </div>
-          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="2000">
+          <div data-aos="fade-up" data-aos-duration="1000">
             <About />
           </div>
         </Stack>
