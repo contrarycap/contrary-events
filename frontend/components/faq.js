@@ -13,7 +13,7 @@ export default function FAQ() {
     },
     {
       preview: "What is Contrary?",
-      detail: "asdf"
+      detail: "Backed by founders from Airbnb, Tesla, Facebook, and many others, Contrary is a venture fund that uses technology to identify and invest in the world's top talent - first - and then relentlessly support them as they scale."
     },
   ];
 
