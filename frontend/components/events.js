@@ -1,4 +1,4 @@
-import { Stack, Typography } from "@mui/material";
+import { Stack, Typography, Box } from "@mui/material";
 import FullCalendar from '@fullcalendar/react' // must go before plugins
 import dayGridPlugin from '@fullcalendar/daygrid';
 
@@ -13,6 +13,7 @@ export default function Events() {
       </Typography>
       <FullCalendar
         initialView="dayGridMonth"
+        height={'70vh'}
         plugins={[dayGridPlugin]}
         weekends={false}
         events={[
