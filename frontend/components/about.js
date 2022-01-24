@@ -1,8 +1,9 @@
 import { Stack, Typography } from "@mui/material";
+import MuiNextLink from '@components/core-components/MuiNextLink';
 
 export default function About() {
   return (
-    <Stack spacing={2} width={'100%'}>
+    <Stack id="about" spacing={2} width={'100%'}>
       <Typography variant="h2">
         About us
       </Typography>
@@ -13,7 +14,7 @@ export default function About() {
         Looking to found a company?
       </Typography>
       <Typography variant="body1">
-        Cool things about founding a company
+        Check out our guide for <MuiNextLink href="https://contrarycap.com/waterloo" target="_blank">"How to Start a Startup at Waterloo"</MuiNextLink>.
       </Typography>
       <Typography variant="h5">
         Other resources
