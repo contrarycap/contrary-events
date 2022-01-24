@@ -13,16 +13,16 @@ const Offset = styled("div")(({ theme }) => theme.mixins.toolbar);
 
 export const navLinks = [
   { title: 'home', path: '/' },
-  { title: 'about', path: '/#about'},
-  { title: 'FAQ', path: '/#faq'},
-  { title: 'submit', path: '/submit'},
+  { title: 'about', path: '/#about' },
+  { title: 'FAQ', path: '/#faq' },
+  { title: 'submit', path: '/submit' },
 ];
 
 const Header = () => {
   return (
     <>
-    <HideOnScroll>
-        <AppBar position="fixed" color="transparent" elevation={0} enableColorOnDark>
+      <HideOnScroll>
+        <AppBar position="fixed" color="white" elevation={0} enableColorOnDark>
           <Toolbar>
             <Container
               maxWidth="lg"

@@ -13,7 +13,10 @@ const theme = createTheme({
     },
     text: {
       primary: "#000",
-    }
+    },
+    white: {
+      main: "#fff"
+    },
   },
   typography: {
     fontFamily: "Work Sans",
