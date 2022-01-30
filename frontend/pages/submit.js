@@ -6,7 +6,7 @@ const About = () => {
       <Stack spacing={2}>
         <Typography variant='h1'>Submit an Event</Typography>
         <iframe
-          src='https://docs.google.com/forms/d/e/1FAIpQLSe_i21A7ZRYN-tL9V0_EM50-lPlIpGeliUOM2Itc9XA6jsJXQ/viewform?embedded=true'
+          src='https://docs.google.com/forms/d/e/1FAIpQLScPapG5kfrIx0LdPh-MYN4rQFDlVMR2gN6h220d5Hd7cxPZiA/viewform?embedded=true'
           width='100%'
           height='700px'
           frameborder='0'
