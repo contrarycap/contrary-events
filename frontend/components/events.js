@@ -1,6 +1,7 @@
 import { Stack, Typography, Box } from "@mui/material";
 import FullCalendar from '@fullcalendar/react' // must go before plugins
 import dayGridPlugin from '@fullcalendar/daygrid';
+import googleCalendarPlugin from '@fullcalendar/google-calendar';
 
 export default function Events() {
   return (
@@ -13,13 +14,22 @@ export default function Events() {
       </Typography>
       <FullCalendar
         initialView="dayGridMonth"
-        height={'70vh'}
-        plugins={[dayGridPlugin]}
-        weekends={false}
-        events={[
-          { title: 'event 1', date: '2019-04-01' },
-          { title: 'event 2', date: '2019-04-02' }
+        height={'80vh'}
+        plugins={[dayGridPlugin, googleCalendarPlugin]}
+        googleCalendarApiKey={process.env.NEXT_PUBLIC_GCAL_API}
+        eventSources={[
+          {
+            googleCalendarId: 'c_56mm6c0unhoub1jibmg0h8tt8s@group.calendar.google.com'
+          }
         ]}
+        eventClick={function (arg) {
+
+          // opens events in a popup window
+          window.open(arg.event.url, '_blank', 'width=700,height=600');
+
+          // prevents current tab from navigating
+          arg.jsEvent.preventDefault();
+        }}
       />
     </Stack>
   )
